@@ -139,7 +139,7 @@ extension Map {
             #endif
             mapView.showsScale = newView.informationVisibility.contains(.scale)
             mapView.showsTraffic = newView.informationVisibility.contains(.traffic)
-            mapView.showsUserLocation = newView.informationVisibility.contains(.userLocation)
+            mapView.showsUserLocation = true//newView.informationVisibility.contains(.userLocation)
             #if os(macOS) || targetEnvironment(macCatalyst)
             mapView.showsZoomControls = newView.informationVisibility.contains(.zoomControls)
             if #available(macOS 11, macCatalyst 14, *) {
